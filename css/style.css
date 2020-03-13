@@ -1,0 +1,19 @@
+div{
+
+  box-shadow: 1px 1px 5px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 450px;
+  margin-left: 450px;
+  background-color: red;
+}
+
+
+p{
+  box-shadow: 1px 1px 5px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 1275px;
+  margin-left: 0px;
+  background-color: red;
+}
