@@ -1,0 +1,137 @@
+html{
+    height: 100%;
+}
+h1,h2{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.image{
+   margin-top: 50px;
+   width: 160px;
+   padding: 5px;
+   background: black;
+   box-shadow: 10px 10px 5px #888888;
+   margin-left: 600px;
+}
+
+body{
+    font-style: oblique;
+    text-align: center;
+    color: red;
+    background: rgb(189, 183, 183);
+    font-family:'Source Sans Pro',Arial,sans-serif;
+   
+}
+
+.header-menu{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.header-menu-item{
+    display: inline-block
+}
+.header-menu-item a{
+    color: red;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px #888888;
+    background-color: black;
+    margin: 30px;
+}
+.header-menu-item a:hover{
+    background:white
+}
+h3{
+    background-color: rgb(155, 151, 151);
+    margin-left: 560px;
+    margin-right: 565px;
+    color: black;
+}
+
+h4{
+    background: black;
+    padding: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+h5{
+    background-color:black;
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.container{
+    background:rgb(51, 49, 49);
+    padding: 10px;
+}
+
+.footer{
+    background-color: black;
+    padding: 10px;
+    text-align: left;
+    margin-top: 135px;
+}
+.footer-copy{
+    text-align: right;
+    margin-top: -33px;
+}
+
+/* Tablet */
+@media (max-width :998px){
+    .image{
+        margin-left: 400px;
+    }
+}
+
+
+
+
+/* Smartphone*/
+@media (max-width: 768px){
+    .header-menu-item a{
+        margin: 10px;
+   }
+   .image{
+       margin-left: 300px;
+   }
+
+   h5{
+    width: 25%;
+    margin-left: 300px;
+   }
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */

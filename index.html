@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font/flaticon.css">
+        <title>My Personal Site</title>
+    </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+       jQuery('.skillbar').each(function(){
+           jQuery(this).find('.skillbar-bar').animate({
+               width:jQuery(this).attr('data-percent')
+           },3000);
+       });
+   });
+</script>
+<body>
+    <div class="container">
+    <h1>Giovanni Barbaro</h1>
+    <h2>Developer,traveler,foodlover</h2>
+   </div>
+<header class="header clearfix">
+ <ul class="header-menu">
+    <li class="header-menu-item"><a href="index.html">Home<i class="flaticon-010-blog-1"></i></a></li>
+    <li class="header-menu-item"><a href="about_me.html">About me<i class="flaticon-002-blogger"></i></a></li>
+    <li class="header-menu-item"><a href="contact_me.html">Contact me<i class="flaticon-013-newsletter"></i></a></li>
+    <li class="header-menu-item"><a href="my_project.html">My project<i class="flaticon-047-browser-2"></i></a></li>
+    <li class="header-menu-item"><a href="blog.html">Blog<i class="flaticon-015-blog-2"></i> </a></li>
+ </ul>
+</header>
+<section class="info">
+    <h3>Read my story---> <button><a href="about_me.html">About me</a></button></h3>
+    <h4>My hard skills</h4>
+    <div class="container-skillbar">
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+            <div class="skill-bar-percent">Level 2</div>
+        </div>
+    
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skill-bar-percent">Level 2</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>Javascript</span></div>
+            <div class="skillbar-bar" style="background: #06A2CB;"></div>
+            <div class="skill-bar-percent">Level 3</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title" style="background: #218559;"><span>Excel</span></div>
+            <div class="skillbar-bar" style="background: #218559;"></div>
+            <div class="skill-bar-percent">Level 4</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #D0C6B1;"><span>PHP</span></div>
+            <div class="skillbar-bar" style="background: #D0C6B1;"></div>
+            <div class="skill-bar-percent">Level 2</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #192823;"><span>MYSQL</span></div>
+            <div class="skillbar-bar" style="background: #454545;"></div>
+            <div class="skill-bar-percent">Level 2</div>
+        </div> 
+        <div class="skillbar clearfix " data-percent="10%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>React</span></div>
+            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+            <div class="skill-bar-percent">Level 1</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>Wordpress</span></div>
+            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skill-bar-percent">Level 2</div>
+        </div> 
+    
+        <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #06A2CB;"></div>
+            <div class="skill-bar-percent">Level 3</div>
+        </div> 
+        <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #218559;"><span>Vuejs</span></div>
+            <div class="skillbar-bar" style="background: #218559;"></div>
+            <div class="skill-bar-percent">Level 3</div>
+        </div> 
+    </div><!-- End container Skill Bar --> 
+</section>
+<footer class="footer">
+<p>@2020,coded by Giovanni Barbaro</p>
+<div class="footer-copy">
+    <p>Powered by Flaticon.com</p>
+</div>
+</footer>
+</body>
+</html>
